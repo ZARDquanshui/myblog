@@ -1,0 +1,268 @@
+
+<!--这是标签详情页-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="static/css/me.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+</head>
+<body class="typeBody">
+<!--导航-->
+<!--对最上面一部分进行自定义距离-->
+<nav class="ui inverted attached segment m-padded-tb-tiny m-shadow-small">
+    <!--定义一个容器-->
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui item m-font-STXingkai-title">胖达の米奇屋</h2>
+            <!--使得当前位置高亮-->
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="home icon"></i>首页</a>
+            <a href="#" class="active m-item item m-mobile-hide m-font-STKaiti-title"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="file archive icon"></i>资源</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="pencil alternate icon"></i>其他</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="info icon"></i>关于本站</a>
+            <div class="right menu">
+                <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="large registered icon"></i>注册</a>
+                <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="large sign-in icon"></i>登陆</a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle big black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="types-content-segment-container m-tags-padded">
+    <div class="ui container">
+        <!--header 顶部查看方式选择-->
+        <div class="ui top attached segment">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h3 class="ui olive header">查看方式</h3>
+                </div>
+                <!--靠右-->
+                <div class="right aligned column">
+                    <!--使得所有元素在一行-->
+                    <!-- 共 <h3 class="ui orange header m-inline-block m-text-mini">10</h3> 篇-->
+                    <div class="ui dropdown item">
+                        <div class="text"><h3 class="m-text-tiny">标签</h3></div>
+                        <i class="sort icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item"><h3 class="m-text-tiny">分类</h3></a>
+                            <a href="#" class="item"><h3 class="m-text-tiny">标签</h3></a>
+                            <a href="#" class="item"><h3 class="m-text-tiny">作者</h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--标签按钮-->
+        <div class="ui attached segment">
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> IDEA
+                </div>
+                <a class="ui basic grey left pointing label">
+                    10
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> java
+                </div>
+                <a class="ui basic grey left pointing label">
+                    153
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> pytorch
+                </div>
+                <a class="ui basic grey left pointing label">
+                    14
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> 鲁迅
+                </div>
+                <a class="ui basic grey left pointing label">
+                    75
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> 感悟
+                </div>
+                <a class="ui basic grey left pointing label">
+                    18
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> pandas
+                </div>
+                <a class="ui basic grey left pointing label">
+                    10
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> 摄影
+                </div>
+                <a class="ui basic grey left pointing label">
+                    8
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> 风景
+                </div>
+                <a class="ui basic grey left pointing label">
+                    10
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> 毛选
+                </div>
+                <a class="ui basic grey left pointing label">
+                    43
+                </a>
+            </div>
+            <div class="ui labeled button m-margin-tb-small m-margin-lr-tiny" tabindex="0">
+                <div class="ui grey button">
+                    <i class="paper plane outline icon"></i> 经济
+                </div>
+                <a class="ui basic grey left pointing label">
+                    17
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部footer-->
+<footer class="ui inverted vertical segment m-padded-tb-large">
+    <!--将所有居中-->
+    <div class="ui container">
+        <!--将底部的footer进行均分，一共16块-->
+        <div class="ui inverted stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">基本信息</h4>
+                <div class="ui inverted list">
+                    <div class="item">
+                        <i class="small user icon"></i>
+                        <div class="content m-text-mini m-text-spaced"><a href="#">练连荣</a></div>
+                    </div>
+                    <div class="item">
+                        <i class="small marker icon"></i>
+                        <div class="content m-text-mini m-text-spaced">江苏南京</div>
+                    </div>
+                    <div class="item">
+                        <i class="small mail icon"></i>
+                        <div class="content">2916803393@qq.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">项目架构</h4>
+                <div class="ui inverted list">
+                    <div class="item m-text-mini m-text-spaced">项目作者：<a href="#">练连荣</a></div>
+                    <div class="item m-text-mini m-text-spaced">博客版本：<a href="#">v1.3.1</a></div>
+                    <div class="item m-text-mini m-text-spaced">框架工具：<a href="#">semantic_ui + springboot</a></div>
+                    <div class="item m-text-mini m-text-spaced">开发文档：<a href="#">文档</a></div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">统计</h4>
+                <div class="ui inverted list">
+                    <div class="item m-text-mini m-text-spaced">文章总数：3</div>
+                    <div class="item m-text-mini m-text-spaced">点赞总数：5</div>
+                    <div class="item m-text-mini m-text-spaced">评论总数：5</div>
+                    <div class="item m-text-mini m-text-spaced">登陆用户：2</div>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">社交平台</h4>
+                <p class="m-text-mini m-text-spaced m-opacity-tiny">个人博客平台，分享知识，交流观点，欢迎关注我</p>
+                <div class="ui large teal circular wechat icon button">
+                    <i class="big wechat icon"></i>
+                </div>
+                <div class="ui wechat-qr flowing popup transition hidden">
+                    <div class="image">
+                        <img src="./static/images/wechat.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                    </div>
+                </div>
+                <a href="https://github.com/ZARDquanshui" class="ui large green circular github icon button">
+                    <i class="big github icon"></i>
+                </a>
+                <div class="ui large teal circular qq icon button">
+                    <i class="big qq icon"></i>
+                </div>
+                <div class="ui qq-qr flowing popup transition hidden">
+                    <div class="image">
+                        <img src="./static/images/qq.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                    </div>
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=100013538490099" class="ui large circular facebook f icon button">
+                    <i class="big facebook icon"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCh4C44IKMXC0PpU1D0pnC9A/featured?disable_polymer=1" class="ui large circular youtube icon button">
+                    <i class="big youtube icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/%E8%BF%9E%E8%8D%A3-%E7%BB%83-8b1b131a1/" class="ui large circular linkedin icon button">
+                    <i class="big linkedin icon"></i>
+                </a>
+            </div>
+        </div>
+        <!--设置分割线-->
+        <div class="ui inverted section divider"></div>
+        <div class="ui center aligned container">
+            <p class="m-text-mini m-text-spaced m-opacity-tiny">Copyright @ 2020 lianlianrong </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<!--看板娘效果插件-->
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+<!--雪花效果-->
+<!--<script src="http://www.lmlblog.com/winter/templets/xq/js/snowy.js"></script>-->
+<!--<script src="http://www.lmlblog.com/blog/14/js/Snow.js"></script>-->
+<!--<style type="text/css">-->
+<!--    .snow-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;}-->
+<!--</style>-->
+<!--<div class="snow-container"></div>-->
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
+<script>
+    $('.ui.dropdown')
+        .dropdown()
+    ;
+</script>
+<script>
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'top center'
+    });
+    $('.qq').popup({
+        popup: $('.qq-qr'),
+        position: 'top center'
+    });
+</script>
+
+</body>
+</html>

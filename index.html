@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="static/css/me.css">
+    <link rel="stylesheet" href="static/css/animate.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<!--导航-->
+<!--对最上面一部分进行自定义距离-->
+<nav class="ui inverted attached segment m-padded-tb-tiny m-shadow-small">
+    <!--定义一个容器-->
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui item m-font-STXingkai-title">胖达の米奇屋</h2>
+            <!--使得当前位置高亮-->
+            <a href="#" class="active m-item item m-mobile-hide m-font-STKaiti-title"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="file archive icon"></i>资源</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="pencil alternate icon"></i>其他</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="info icon"></i>关于本站</a>
+            <div class="right menu">
+                <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="large registered icon"></i>注册</a>
+                <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="large sign-in icon"></i>登陆</a>
+            </div>
+        </div>
+    </div>
+    <!--使得在手机端隐藏菜单-->
+    <a href="#" class="ui menu toggle big black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="home-content-segment-container m-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+                <!--header-->
+                <div class="ui top segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui olive header">排序方式</h3>
+                        </div>
+                        <!--靠右-->
+                        <div class="right aligned column">
+                            <!--使得所有元素在一行-->
+                            <!-- 共 <h3 class="ui orange header m-inline-block m-text-mini">10</h3> 篇-->
+                            <div class="ui dropdown item">
+                                <div class="text">日期</div>
+                                <i class="small sort icon"></i>
+                                <div class="menu">
+                                    <a href="#" class="item">日期</a>
+                                    <a href="#" class="item">评论数</a>
+                                    <a href="#" class="item">点赞数</a>
+                                    <a href="#" class="item">阅读量</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--content，博客内容-->
+                <div class="ui segment">
+                    <!--定义一篇文章的segment-->
+                    <div class="ui padded vertical segment m-padded-tb-mini">
+                        <div class="ui equal width horizontally padded grid">
+                            <div class="row">
+                                <h2 class="ui header">
+                                    <a href="#" class="m-NO1-STKaiti-title">我的第一篇博客</a>
+                                    <div class="ui orange label m-text-large m-sub-title-KaiTi">原创</div>
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <!--这里为了适应移动端-->
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="ui very relaxed horizontal list">
+                                        <div class="item">
+                                            <img src="./static/images/avatar.jpg" alt="" class="ui avatar image">
+                                            <div class="middle aligned content"><a href="#" class="middle header">Lian</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar alternate icon"></i> 2020-02-02
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 2342
+                                        </div>
+                                        <a href="#" class="item">
+                                            <i class="comment icon"></i> 5
+                                        </a>
+                                        <a href="#" class="item">
+                                            <i class="tasks icon"></i> 优化算法
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="ui mobile reversed stackable equal height grid">
+                                    <div class="stretched row">
+                                        <div class="ui five wide column">
+                                            <a href="#" target="_blank">
+                                                <img src="https://unsplash.it/800/500?image=1005" alt="" class="ui rounded image">
+                                            </a>
+                                        </div>
+                                        <div class="ui eleven wide column">
+                                            <p>传统的本地环境一般是把 NGINX、MySQL、PHP 都在一台机器上安装好,
+                                                但是如果用于生产环境就非常不利于维护和扩展了； Docker 中推崇一个服务就是一个容器；
+                                                我们上篇文章使用的 Dockerfile 都是定义的单个容器服务的镜像；</p>
+                                            <div class="ui grid">
+                                                <div class="bottom aligned row">
+                                                    <div class="thirteen wide column">
+                                                        <a class="ui inverted grey tiny label">Black Label</a>
+                                                        <a class="ui inverted grey tiny label">Yellow Label</a>
+                                                        <a class="ui inverted grey tiny label">Green Label</a>
+                                                    </div>
+                                                    <div class="three wide column">
+                                                        <a href="#" target="_blank" class="ui teal small basic button m-padded-small m-text-mini">阅读全文</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ui segment">
+                    <!--定义第二篇文章的segment-->
+                    <div class="ui padded vertical segment m-padded-tb-mini">
+                        <div class="ui equal width horizontally padded grid">
+                            <div class="row">
+                                <h2 class="ui header">
+                                    <a href="#" class="m-NO1-STKaiti-title">我的第二篇博客</a>
+                                    <div class="ui teal label m-text-large m-sub-title-KaiTi">转载</div>
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <!--这里为了适应移动端-->
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="ui very relaxed horizontal list">
+                                        <div class="item">
+                                            <img src="./static/images/avatar.jpg" alt="" class="ui avatar image">
+                                            <div class="middle aligned content"><a href="#" class="middle header">Lian</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar alternate icon"></i> 2020-02-02
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 2342
+                                        </div>
+                                        <a href="#" class="item">
+                                            <i class="comment icon"></i> 5
+                                        </a>
+                                        <a href="#" class="item">
+                                            <i class="tasks icon"></i> 优化算法
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="stretched row">
+                                        <div class="ui five wide column">
+                                            <a href="#" target="_blank">
+                                                <img src="https://unsplash.it/800/500?image=1005" alt="" class="ui rounded image">
+                                            </a>
+                                        </div>
+                                        <div class="ui eleven wide column">
+                                            <p>传统的本地环境一般是把 NGINX、MySQL、PHP 都在一台机器上安装好,
+                                                但是如果用于生产环境就非常不利于维护和扩展了； Docker 中推崇一个服务就是一个容器；
+                                                我们上篇文章使用的 Dockerfile 都是定义的单个容器服务的镜像；</p>
+                                            <div class="ui grid">
+                                                <div class="bottom aligned row">
+                                                    <div class="thirteen wide column">
+                                                        <a class="ui inverted grey tiny label">时间序列</a>
+                                                        <a class="ui inverted grey tiny label">空间序列</a>
+                                                        <a class="ui inverted grey tiny label">解决方案</a>
+                                                    </div>
+                                                    <div class="three wide column">
+                                                        <a href="#" target="_blank" class="ui teal small basic button m-padded-small m-text-mini">阅读全文</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ui segment">
+                    <!--定义三篇文章的segment-->
+                    <div class="ui padded vertical segment m-padded-tb-mini">
+                        <div class="ui equal width horizontally padded grid">
+                            <div class="row">
+                                <h2 class="ui header">
+                                    <a href="#" class="m-NO1-STKaiti-title">我的第三篇博客</a>
+                                    <div class="ui orange label m-text-large m-sub-title-KaiTi">原创</div>
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <!--这里为了适应移动端-->
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="ui very relaxed horizontal list">
+                                        <div class="item">
+                                            <img src="./static/images/avatar.jpg" alt="" class="ui avatar image">
+                                            <div class="middle aligned content"><a href="#" class="middle header">Lian</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar alternate icon"></i> 2020-02-02
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 2342
+                                        </div>
+                                        <a href="#" class="item">
+                                            <i class="comment icon"></i> 5
+                                        </a>
+                                        <a href="#" class="item">
+                                            <i class="tasks icon"></i> 优化算法
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="ui mobile reversed stackable equal height grid">
+                                    <div class="stretched row">
+                                        <div class="ui five wide column">
+                                            <a href="#" target="_blank">
+                                                <img src="https://unsplash.it/800/500?image=1005" alt="" class="ui rounded image">
+                                            </a>
+                                        </div>
+                                        <div class="ui eleven wide column">
+                                            <p>传统的本地环境一般是把 NGINX、MySQL、PHP 都在一台机器上安装好,
+                                                但是如果用于生产环境就非常不利于维护和扩展了； Docker 中推崇一个服务就是一个容器；
+                                                我们上篇文章使用的 Dockerfile 都是定义的单个容器服务的镜像；</p>
+                                            <div class="ui grid">
+                                                <div class="bottom aligned row">
+                                                    <div class="thirteen wide column">
+                                                        <a class="ui inverted grey tiny label">Black Label</a>
+                                                        <a class="ui inverted grey tiny label">Yellow Label</a>
+                                                        <a class="ui inverted grey tiny label">Green Label</a>
+                                                    </div>
+                                                    <div class="three wide column">
+                                                        <a href="#" target="_blank" class="ui teal small basic button m-padded-small m-text-mini">阅读全文</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ui segment">
+                    <!--定义三篇文章的segment-->
+                    <div class="ui padded vertical segment m-padded-tb-mini">
+                        <div class="ui equal width horizontally padded grid">
+                            <div class="row">
+                                <h2 class="ui header">
+                                    <a href="#" class="m-NO1-STKaiti-title">我的第四篇博客</a>
+                                    <div class="ui orange label m-text-large m-sub-title-KaiTi">原创</div>
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <!--这里为了适应移动端-->
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="ui very relaxed horizontal list">
+                                        <div class="item">
+                                            <img src="./static/images/avatar.jpg" alt="" class="ui avatar image">
+                                            <div class="middle aligned content"><a href="#" class="middle header">Lian</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar alternate icon"></i> 2020-02-02
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 2342
+                                        </div>
+                                        <a href="#" class="item">
+                                            <i class="comment icon"></i> 5
+                                        </a>
+                                        <a href="#" class="item">
+                                            <i class="tasks icon"></i> 优化算法
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="ui mobile reversed stackable equal height grid">
+                                    <div class="stretched row">
+                                        <div class="ui five wide column">
+                                            <a href="#" target="_blank">
+                                                <img src="https://unsplash.it/800/500?image=1005" alt="" class="ui rounded image">
+                                            </a>
+                                        </div>
+                                        <div class="ui eleven wide column">
+                                            <p>传统的本地环境一般是把 NGINX、MySQL、PHP 都在一台机器上安装好,
+                                                但是如果用于生产环境就非常不利于维护和扩展了； Docker 中推崇一个服务就是一个容器；
+                                                我们上篇文章使用的 Dockerfile 都是定义的单个容器服务的镜像；</p>
+                                            <div class="ui grid">
+                                                <div class="bottom aligned row">
+                                                    <div class="thirteen wide column">
+                                                        <a class="ui inverted grey tiny label">Black Label</a>
+                                                        <a class="ui inverted grey tiny label">Yellow Label</a>
+                                                        <a class="ui inverted grey tiny label">Green Label</a>
+                                                    </div>
+                                                    <div class="three wide column">
+                                                        <a href="#" target="_blank" class="ui teal small basic button m-padded-small m-text-mini">阅读全文</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ui segment">
+                    <!--定义三篇文章的segment-->
+                    <div class="ui padded vertical segment m-padded-tb-mini">
+                        <div class="ui equal width horizontally padded grid">
+                            <div class="row">
+                                <h2 class="ui header">
+                                    <a href="#" class="m-NO1-STKaiti-title">我的第五篇博客</a>
+                                    <div class="ui orange label m-text-large m-sub-title-KaiTi">原创</div>
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <!--这里为了适应移动端-->
+                                <div class="ui mobile reversed stackable grid">
+                                    <div class="ui very relaxed horizontal list">
+                                        <div class="item">
+                                            <img src="./static/images/avatar.jpg" alt="" class="ui avatar image">
+                                            <div class="middle aligned content"><a href="#" class="middle header">Lian</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar alternate icon"></i> 2020-02-02
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 2342
+                                        </div>
+                                        <a href="#" class="item">
+                                            <i class="comment icon"></i> 5
+                                        </a>
+                                        <a href="#" class="item">
+                                            <i class="tasks icon"></i> 优化算法
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="ui mobile reversed stackable equal height grid">
+                                    <div class="stretched row">
+                                        <div class="ui five wide column">
+                                            <a href="#" target="_blank">
+                                                <img src="https://unsplash.it/800/500?image=1005" alt="" class="ui rounded image">
+                                            </a>
+                                        </div>
+                                        <div class="ui eleven wide column">
+                                            <p>传统的本地环境一般是把 NGINX、MySQL、PHP 都在一台机器上安装好,
+                                                但是如果用于生产环境就非常不利于维护和扩展了； Docker 中推崇一个服务就是一个容器；
+                                                我们上篇文章使用的 Dockerfile 都是定义的单个容器服务的镜像；</p>
+                                            <div class="ui grid">
+                                                <div class="bottom aligned row">
+                                                    <div class="thirteen wide column">
+                                                        <a class="ui inverted grey tiny label">Black Label</a>
+                                                        <a class="ui inverted grey tiny label">Yellow Label</a>
+                                                        <a class="ui inverted grey tiny label">Green Label</a>
+                                                    </div>
+                                                    <div class="three wide column">
+                                                        <a href="#" target="_blank" class="ui teal small basic button m-padded-small m-text-mini">阅读全文</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--footer,最下面显示翻页按钮-->
+                <div class="ui bottom segment">
+                    <div class="ui middle aligned two column grid">
+                        <!--设置上下翻页按钮-->
+                        <div class="left aligned column">
+                            <div class="ui teal vertical animated twitter small button">
+                                <div class="visible content m-button-STKaiti">上一页</div>
+                                <div class="hidden content">
+                                    <i class="up arrow icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right aligned column">
+                            <div class="ui teal vertical animated twitter small button">
+                                <div class="visible content m-button-STKaiti">下一页</div>
+                                <div class="hidden content">
+                                    <i class="down arrow icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边部分-->
+            <div class="five wide column">
+                <!--搜索框-->
+                <div class="ui segment">
+                    <div class="ui container">
+                        <!--使得搜索框自适应容器大小-->
+                        <div class="ui fluid action input">
+                            <input type="text" placeholder="Search...">
+                            <button class="ui teal button">搜索</button>
+                        </div>
+                    </div>
+                </div>
+                <!--标签显示-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="teal tags icon"></i>  标签
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <div class="ui list">
+                            <div class="item">
+                                <div class="ui horizontal list">
+                                    <div class="item"><a href="#" class="m-red">Java基础</a></div>
+                                    <div class="item"><a href="#" class="m-aqua">Redis</a></div>
+                                    <div class="item"><a href="#" class="m-lime">数据库</a></div>
+                                    <div class="item"><a href="#" class="m-olive">Mybatis</a></div>
+                                    <div class="item"><a href="#" class="m-green">Linux</a></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="ui horizontal list">
+                                    <div class="item"><a href="#" class="m-blue">缓存雪崩</a></div>
+                                    <div class="item"><a href="#" class="m-olive">浮生小记</a></div>
+                                    <div class="item"><a href="#" class="m-purple">Python</a></div>
+                                    <div class="item"><a href="#" class="m-aqua">SpringBoot</a></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="ui horizontal list">
+                                    <div class="item"><a href="#" class="m-maroon">Git</a></div>
+                                    <div class="item"><a href="#" class="m-black">数据集</a></div>
+                                    <div class="item"><a href="#" class="m-red">多标签分类</a></div>
+                                    <div class="item"><a href="#" class="m-gray">经济学</a></div>
+                                    <div class="item"><a href="#" class="m-olive">面试</a></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="ui horizontal list">
+                                    <div class="item"><a href="#" class="m-aqua">vue</a></div>
+                                    <div class="item"><a href="#" class="m-yellow">设计模式</a></div>
+                                    <div class="item"><a href="#" class="m-purple">leetcode</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--最新推荐-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="teal bookmark icon"></i>  推荐博文
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <a href="#" class="m-black m-text-tiny">第一篇博文</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" class="m-black m-text-tiny">第二篇博文</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" class="m-black m-text-tiny">第三篇博文</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" class="m-black m-text-tiny">第四篇博文</a>
+                    </div>
+                </div>
+                <!--最新评论-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="teal comments outline icon"></i>  最新评论
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <div class="ui minimal comments">
+                            <div class="comment">
+                                <a class="ui avatar image">
+                                    <img class="ui avatar image" src="./static/images/avatar.jpg" alt="">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Matt</a>
+                                    <div class="metadata">
+                                        <span class="date">2020.10.13</span>
+                                    </div>
+                                    <div class="text">
+                                        How artistic!
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">评论</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a class="avatar rounded image">
+                                    <img src="./static/images/avatar.jpg" alt="" class="ui avatar rounded image">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Elliot Fu</a>
+                                    <div class="metadata">
+                                        <span class="date">2020.11.13</span>
+                                    </div>
+                                    <div class="text">
+                                        <p>This has been very useful for my research. Thanks as well!</p>
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">评论</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./static/images/avatar.jpg">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Joe Henderson</a>
+                                    <div class="metadata">
+                                        <span class="date">2020.11.1</span>
+                                    </div>
+                                    <div class="text">
+                                        Dude, this is awesome. Thanks so much
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">评论</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--友情链接-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="teal linkify icon"></i>  友情链接
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <div class="ui list">
+                            <div class="item">
+                                <div class="ui horizontal list">
+                                    <div class="item"><a href="https://www.liuchuo.net/archives/tag/gplt" target="_blank">柳婼 の blog</a></div>
+                                    <div class="item"><a href="http://note.xyongs.cn/#/" target="_blank">谢勇盛的博客</a></div>
+                                    <div class="item"><a href="https://hellozhaozheng.github.io/" target="_blank">ZeroZone</a></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="ui horizontal list">
+                                    <div class="item"><a href="https://www.cnblogs.com/woodineast" target="_blank">赵启超的blog</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--打赏二维码-->
+                <div class="ui horizontal divider header"><h3 class="m-teal">欢迎交流</h3></div>
+                <div class="ui centered card" style="width:11em">
+                    <img src="./static/images/wechat.jpg" alt="" class="ui small rounded image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部footer-->
+<footer class="ui inverted vertical segment m-padded-tb-big">
+    <!--将所有居中-->
+    <div class="ui container">
+        <!--将底部的footer进行均分，一共16块-->
+        <div class="ui inverted stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">基本信息</h4>
+                <div class="ui inverted list">
+                    <div class="item">
+                        <i class="small user icon"></i>
+                        <div class="content m-text-mini m-text-spaced"><a href="#">练连荣</a></div>
+                    </div>
+                    <div class="item">
+                        <i class="small marker icon"></i>
+                        <div class="content m-text-mini m-text-spaced">江苏南京</div>
+                    </div>
+                    <div class="item">
+                        <i class="small mail icon"></i>
+                        <div class="content">2916803393@qq.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">项目架构</h4>
+                <div class="ui inverted list">
+                    <div class="item m-text-mini m-text-spaced">项目作者：<a href="#">练连荣</a></div>
+                    <div class="item m-text-mini m-text-spaced">博客版本：<a href="#">v1.3.1</a></div>
+                    <div class="item m-text-mini m-text-spaced">框架工具：<a href="#">semantic_ui + springboot</a></div>
+                    <div class="item m-text-mini m-text-spaced">开发文档：<a href="#">文档</a></div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">统计</h4>
+                <div class="ui inverted list">
+                    <div class="item m-text-mini m-text-spaced">文章总数：3</div>
+                    <div class="item m-text-mini m-text-spaced">点赞总数：5</div>
+                    <div class="item m-text-mini m-text-spaced">评论总数：5</div>
+                    <div class="item m-text-mini m-text-spaced">登陆用户：2</div>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">社交平台</h4>
+                <p class="m-text-mini m-text-spaced m-opacity-tiny">个人博客平台，分享知识，交流观点，欢迎关注我</p>
+                <div class="ui large teal circular wechat icon button">
+                    <i class="big wechat icon"></i>
+                </div>
+                <div class="ui wechat-qr flowing popup transition hidden">
+                    <div class="image">
+                        <img src="./static/images/wechat.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                    </div>
+                </div>
+                <a href="https://github.com/ZARDquanshui" class="ui large green circular github icon button">
+                    <i class="big github icon"></i>
+                </a>
+                <div class="ui large teal circular qq icon button">
+                    <i class="big qq icon"></i>
+                </div>
+                <div class="ui qq-qr flowing popup transition hidden">
+                    <div class="image">
+                        <img src="./static/images/qq.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                    </div>
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=100013538490099" class="ui large circular facebook f icon button">
+                    <i class="big facebook icon"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCh4C44IKMXC0PpU1D0pnC9A/featured?disable_polymer=1" class="ui large circular youtube icon button">
+                    <i class="big youtube icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/%E8%BF%9E%E8%8D%A3-%E7%BB%83-8b1b131a1/" class="ui large circular linkedin icon button">
+                    <i class="big linkedin icon"></i>
+                </a>
+            </div>
+        </div>
+        <!--设置分割线-->
+        <div class="ui inverted section divider"></div>
+        <div class="ui center aligned container">
+            <p class="m-text-mini m-text-spaced m-opacity-tiny">Copyright @ 2020 lianlianrong </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--看板娘效果插件-->
+<!--第一种-->
+<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+<!--第二种一个人物的看板娘，缓存快-->
+<!--<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--    L2Dwidget.init({-->
+
+<!--        "display": {-->
+<!--            "position": "right", // 定位位置（"left"/"right"/"top"/"bottom"）-->
+<!--            "width": 105, // 宽度-->
+<!--            "height": 170, // 高度-->
+<!--            "hOffset": 0,-->
+<!--            "vOffset": 0-->
+<!--        },-->
+<!--        "mobile": {-->
+<!--            "show": true,-->
+<!--            "scale": 0.5-->
+<!--        },-->
+<!--        "react": {-->
+<!--            "opacityDefault": 1, // 透明度-->
+<!--            "opacityOnHover": 0.8-->
+<!--        },-->
+
+<!--        "dialog":{-->
+<!--            enable:true,-->
+<!--            script:{-->
+<!--                'tap body':'2',-->
+<!--                'tap face':'3',-->
+<!--            }-->
+<!--        }-->
+
+<!--    });-->
+
+<!--</script>-->
+
+
+<!--雪花效果-->
+<script src="http://www.lmlblog.com/winter/templets/xq/js/snowy.js"></script>
+<script src="http://www.lmlblog.com/blog/14/js/Snow.js"></script>
+<style type="text/css">
+    .snow-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;}
+</style>
+<div class="snow-container"></div>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
+<script>
+    $('.ui.dropdown')
+        .dropdown()
+    ;
+</script>
+<script>
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'top center'
+    });
+    $('.qq').popup({
+        popup: $('.qq-qr'),
+        position: 'top center'
+    });
+</script>
+
+</body>
+</html>

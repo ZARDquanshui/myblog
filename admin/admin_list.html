@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理-博客列表</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+</head>
+<body class="adminBody">
+<!--导航-->
+<!--对最上面一部分进行自定义距离-->
+<nav class="ui inverted attached segment m-padded-tb-tiny m-shadow-small">
+    <!--定义一个容器-->
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui item m-font-STXingkai-title">后台管理</h2>
+            <!--使得当前位置高亮-->
+            <a href="#" class="active m-item item m-mobile-hide m-font-STKaiti-title"><i class="home icon"></i>博客</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="calendar alternate icon"></i>日期</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="file archive icon"></i>资源</a>
+            <a href="#" class="m-item item m-mobile-hide m-font-STKaiti-title"><i class="clone icon"></i>归档</a>
+            <div class="right m-item m-mobile-hide menu">
+                <div class="ui dropdown item">
+                    <img class="ui avatar image" src="../static/images/avatar2.jpg" alt="" >
+                    Lian
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--使得在手机端隐藏菜单-->
+    <a href="#" class="ui menu toggle big black icon button m-top-right m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--发布和列表-->
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" class="item">发布</a>
+            <a href="#" class="teal active item">列表</a>
+        </div>
+    </div>
+</div>
+
+<!--中间内容-->
+<div class="home-content-segment-container m-padded-tb-large">
+    <div class="ui container">
+        <!--博客查询功能-->
+        <form action="#" method="post" class="ui segment large form">
+            <div class="inline fields">
+                <div class="seven wide field"><input type="text" name="title" placeholder="标题"></div>
+                <div class="field">
+                    <div class="ui selection compact dropdown">
+                        <input type="hidden" name="author" placeholder="作者">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">作者</div>
+                        <div class="menu">
+                            <div class="item" data-value="aut-1">Lian</div>
+                            <div class="item" data-value="aut-2">admin2</div>
+                            <div class="item" data-value="aut-3">admin3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="types" placeholder="分类">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">分类</div>
+                        <div class="menu">
+                            <div class="item" data-value="type-1">Spring框架</div>
+                            <div class="item" data-value="type-2">Linux</div>
+                            <div class="item" data-value="type-3">计算机网络</div>
+                            <div class="item" data-value="type-4">数据库</div>
+                            <div class="item" data-value="type-5">毛选</div>
+                            <div class="item" data-value="type-6">leetcode</div>
+                            <div class="item" data-value="type-7">数据结构</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline field">
+                    <div class="ui toggle checkbox">
+                        <input type="checkbox" id="reprint" name="reprint">
+                        <label for="reprint">转载</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <button class="ui teal basic button"><i class="search icon"></i>search</button>
+                </div>
+            </div>
+        </form>
+        <!--博客表格-->
+        <table class="ui striped table">
+            <thead>
+                <tr class="center aligned">
+                    <th></th>
+                    <th>标题</th>
+                    <th>
+                        <div class="ui dropdown item">
+                            <div class="text">分类</div>
+                            <i class="small sort descending icon"></i>
+                            <div class="menu">
+                                <a href="#" class="item" data-value="type-1">Spring框架</a>
+                                <a href="#" class="item" data-value="type-2">Linux</a>
+                                <a href="#" class="item" data-value="type-3">计算机网络</a>
+                                <a href="#" class="item" data-value="type-4">数据库</a>
+                                <a href="#" class="item" data-value="type-5">毛选</a>
+                                <a href="#" class="item" data-value="type-6">leetcode</a>
+                                <a href="#" class="item" data-value="type-7">数据结构</a>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="ui dropdown item">
+                            <div class="text">作者</div>
+                            <i class="small sort descending icon"></i>
+                            <div class="menu">
+                                <a href="#" class="item" data-value="aut-1">Lian</a>
+                                <a href="#" class="item" data-value="aut-2">aut1</a>
+                                <a href="#" class="item" data-value="aut-3">aut2</a>
+                                <a href="#" class="item" data-value="aut-4">转载</a>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="ui dropdown item">
+                            <div class="text">更新时间</div>
+                            <i class="small sort icon"></i>
+                            <div class="menu">
+                                <a href="#" class="item" data-value="timeline-1">顺序<i class="small sort content ascending icon"></i></a>
+                                <a href="#" class="item" data-value="timeline-2">倒序<i class="small sort content descending icon"></i></a>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="ui dropdown item">
+                            <div class="text">阅读量</div>
+                            <i class="small sort icon"></i>
+                            <div class="menu">
+                                <a href="#" class="item" data-value="read">阅读量</a>
+                                <a href="#" class="item" data-value="like">点赞量</a>
+                                <a href="#" class="item" data-value="comment">评论数</a>
+                            </div>
+                        </div>
+                    </th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="center aligned">
+                    <td>1</td>
+                    <td>标题1</td>
+                    <td>spring</td>
+                    <td>Lian</td>
+                    <td>2020.11.1</td>
+                    <td>2021</td>
+                    <td>
+                        <a href="#" class="ui mini teal button">编辑</a>
+                        <a href="#" class="ui mini red button">删除</a>
+                    </td>
+                </tr>
+                <tr class="center aligned">
+                    <td>2</td>
+                    <td>标题2</td>
+                    <td>leetcode</td>
+                    <td>Lian</td>
+                    <td>2020.11.2</td>
+                    <td>2022</td>
+                    <td>
+                        <a href="#" class="ui mini teal button">编辑</a>
+                        <a href="#" class="ui mini red button">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="center aligned">
+                    <th colspan="7">
+                        <div class="ui pagination menu">
+                            <a class="item">上一页</a>
+                            <a class="item">下一页</a>
+                        </div>
+                        <a href="#" class="ui mini right floated teal button">新增</a>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<!--底部footer-->
+<footer class="ui inverted vertical segment m-padded-tb-large">
+    <!--将所有居中-->
+    <div class="ui container">
+        <!--将底部的footer进行均分，一共16块-->
+        <div class="ui inverted stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">基本信息</h4>
+                <div class="ui inverted list">
+                    <div class="item">
+                        <i class="small user icon"></i>
+                        <div class="content m-text-mini m-text-spaced"><a href="#">练连荣</a></div>
+                    </div>
+                    <div class="item">
+                        <i class="small marker icon"></i>
+                        <div class="content m-text-mini m-text-spaced">江苏南京</div>
+                    </div>
+                    <div class="item">
+                        <i class="small mail icon"></i>
+                        <div class="content">2916803393@qq.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">项目架构</h4>
+                <div class="ui inverted list">
+                    <div class="item m-text-mini m-text-spaced">项目作者：<a href="#">练连荣</a></div>
+                    <div class="item m-text-mini m-text-spaced">博客版本：<a href="#">v1.3.1</a></div>
+                    <div class="item m-text-mini m-text-spaced">框架工具：<a href="#">semantic_ui + springboot</a></div>
+                    <div class="item m-text-mini m-text-spaced">开发文档：<a href="#">文档</a></div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">统计</h4>
+                <div class="ui inverted list">
+                    <div class="item m-text-mini m-text-spaced">文章总数：3</div>
+                    <div class="item m-text-mini m-text-spaced">点赞总数：5</div>
+                    <div class="item m-text-mini m-text-spaced">评论总数：5</div>
+                    <div class="item m-text-mini m-text-spaced">登陆用户：2</div>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h4 class="ui inverted header m-text-mini m-text-spaced">社交平台</h4>
+                <p class="m-text-mini m-text-spaced m-opacity-tiny">个人博客平台，分享知识，交流观点，欢迎关注我</p>
+                <div class="ui large teal circular wechat1 icon button">
+                    <i class="big wechat icon"></i>
+                </div>
+                <div class="ui wechat-qr1 flowing popup transition hidden">
+                    <div class="image">
+                        <img src="./static/images/wechat.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                    </div>
+                </div>
+                <a href="https://github.com/ZARDquanshui" class="ui large green circular github icon button">
+                    <i class="big github icon"></i>
+                </a>
+                <div class="ui large teal circular qq1 icon button">
+                    <i class="big qq icon"></i>
+                </div>
+                <div class="ui qq-qr1 flowing popup transition hidden">
+                    <div class="image">
+                        <img src="./static/images/qq.jpg" alt="" class="ui rounded bordered image" style="width: 120px">
+                    </div>
+                </div>
+                <a href="https://www.facebook.com/profile.php?id=100013538490099" class="ui large circular facebook f icon button">
+                    <i class="big facebook icon"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCh4C44IKMXC0PpU1D0pnC9A/featured?disable_polymer=1" class="ui large circular youtube icon button">
+                    <i class="big youtube icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/%E8%BF%9E%E8%8D%A3-%E7%BB%83-8b1b131a1/" class="ui large circular linkedin icon button">
+                    <i class="big linkedin icon"></i>
+                </a>
+            </div>
+        </div>
+        <!--设置分割线-->
+        <div class="ui inverted section divider"></div>
+        <div class="ui center aligned container">
+            <p class="m-text-mini m-text-spaced m-opacity-tiny">Copyright @ 2020 lianlianrong </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
+<script>
+    $('.ui.dropdown')
+        .dropdown()
+    ;
+</script>
+<script>
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'top center'
+    });
+    $('.qq').popup({
+        popup: $('.qq-qr'),
+        position: 'top center'
+    });
+</script>
+
+</body>
+</html>
